@@ -1,0 +1,96 @@
+{
+  "name": "antonio-gil/quotes",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Future",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BannerHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Avenir Next\", Helvetica, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "textTransform": "uppercase",
+      "letterSpacing": "0.2em"
+    },
+    "alternativeText": {
+      "textTransform": "uppercase",
+      "fontWeight": 400,
+      "letterSpacing": "0.2em",
+      "opacity": 0.75
+    },
+    "colors": {
+      "text": "#333",
+      "background": "#fff",
+      "primary": "#666",
+      "secondary": "#888",
+      "highlight": "#1f80ff",
+      "muted": "#f6f6f6",
+      "border": "#eee"
+    },
+    "layout": {
+      "centered": true,
+      "maxWidth": 1024,
+      "bannerHeight": "80vh"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "http://fortrabbit.github.io/quotes/",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/antonio-gil/quotes",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "quotes",
+      "subhead": "Quotes for developers",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "quotes: Quotes for developers",
+          "url": "http://fortrabbit.github.io/quotes/"
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "antonio-gil",
+          "repo": "quotes"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<p>See all the quotes here in the gh-pages branch: <a href=\"http://fortrabbit.github.io/quotes/\">http://fortrabbit.github.io/quotes/</a></p>\n<h1>Quotes for developers</h1>\n<p>People like the quote of the day in our Dashboard. So this is all of them. This is our list of hand-collected quotes for developers. Motivation about the things that really matter in life: Bugs, release cycles and launch dates. It includes a collection of a few hundred quotes with author. Source is the <code>quotes.json</code>.</p>\n<h2>How to contribute</h2>\n<p>Fork repo, add changes, pull-request. Please update both: json &amp; php file.</p>\n<h2>How to build JSON from PHP</h2>\n<p><code>php -r &apos;echo json_encode(include(&quot;quotes.php&quot;), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);&apos; &gt; quotes.json</code></p>\n<h2>TODO</h2>\n<ul>\n<li>Make the gh-pages branch use the master source of the JSON file</li>\n<li>Make gh-pages perform better</li>\n</ul>\n<h2>License</h2>\n<p>WTFPL</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/antonio-gil/quotes",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/antonio-gil",
+          "text": "antonio-gil"
+        }
+      ]
+    }
+  ]
+}
